@@ -62,6 +62,7 @@ Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour
 - 🎨 **Design personnalisable** - Composants UI avec Tailwind CSS
 - 🔧 **Configuration simple** - Prêt à l'emploi en quelques minutes
 - 📱 **Responsive** - Fonctionne sur desktop et mobile
+- 🔌 **Intégration MCP** - Accès direct à la documentation Mastra et Assistant UI
 
 ## 🛠️ Personnalisation
 
@@ -84,6 +85,29 @@ Créez un nouveau fichier dans `mastra/agents/` et importez-le dans `mastra/inde
 
 ### Personnaliser l'interface
 Les composants UI se trouvent dans `components/ui/` et peuvent être modifiés selon vos besoins.
+
+## 🔌 Intégration MCP (Model Context Protocol)
+
+Ce template inclut un fichier `.mcp.json` qui vous permet d'accéder directement à la documentation Mastra et Assistant UI depuis Claude Code ou Cursor.
+
+### Pour Claude Code
+Le fichier `.mcp.json` est déjà configuré et actif. Vous avez accès aux serveurs MCP :
+- **Mastra** - Documentation complète de Mastra
+- **Assistant UI** - Documentation d'Assistant UI
+
+### Pour Cursor
+Renommez le fichier `.mcp.json` en `mcp.json` pour activer l'intégration dans Cursor.
+
+```bash
+# Activer MCP pour Cursor
+mv .mcp.json mcp.json
+```
+
+### Fonctionnalités MCP disponibles
+- 📖 Accès instantané à la documentation
+- 🔍 Recherche dans les docs
+- 💡 Exemples de code contextuels
+- 🚀 Guides d'implémentation
 
 ## 📚 Documentation
 

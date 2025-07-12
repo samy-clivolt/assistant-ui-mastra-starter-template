@@ -46,7 +46,7 @@ const ThreadListItem: FC = () => {
 const ThreadListItemTitle: FC = () => {
   return (
     <p className="text-sm">
-      <ThreadListItemPrimitive.Title fallback="New Chat" />
+      <ThreadListItemPrimitive.Title fallback="Nouvelle conversation" />
     </p>
   );
 };
@@ -55,9 +55,9 @@ const ThreadListItemArchive: FC = () => {
   return (
     <ThreadListItemPrimitive.Archive asChild>
       <TooltipIconButton
-        className="hover:text-primary text-foreground ml-auto mr-3 size-4 p-0"
+        className="hover:text-primary text-foreground mr-3 size-4 p-0"
         variant="ghost"
-        tooltip="Archive thread"
+        tooltip="Archiver la conversation"
       >
         <ArchiveIcon />
       </TooltipIconButton>

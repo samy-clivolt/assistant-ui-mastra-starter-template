@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "server": {
+      "command": "npx",
+      "args": ["-y", "@mastra/mcp-docs-server"]
+    },
+    "assistant-ui": {
+      "command": "npx",
+      "args": ["-y", "@assistant-ui/mcp-docs-server"]
+    }
+
+  }
+}

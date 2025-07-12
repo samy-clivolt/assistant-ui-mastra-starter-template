@@ -7,7 +7,6 @@ import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/s
 import { AppSidebar } from "@/components/app-sidebar";
 import { Separator } from "@/components/ui/separator";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { chefAgent } from "@/mastra/agents/chefAgent";
 
 export const Assistant = () => {
   const runtime = useChatRuntime({
@@ -32,7 +31,7 @@ export const Assistant = () => {
                 <BreadcrumbSeparator className="hidden md:block" />
                 <BreadcrumbItem>
                   <BreadcrumbPage>
-                    Agent {chefAgent.name}
+                    Agent Michel le Chef Étoilé
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
