@@ -1,5 +1,100 @@
 # 🤖 Assistant UI Mastra Starter Template
 
+---
+
+## 🇬🇧 English
+
+A starter template to easily build your own AI assistant with [assistant-ui](https://github.com/Yonom/assistant-ui) and [Mastra](https://mastra.ai/).
+
+### 🚀 Quick Start
+
+#### Prerequisites
+- Node.js 18+ installed
+- An OpenAI or Anthropic account for an API key
+
+#### 1. Use this template
+Click the "Use this template" button at the top of this page to create your own repository.
+
+#### 2. Installation
+```bash
+# Clone your new repository
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+
+# Install dependencies
+npm install
+```
+#### 3. Configuration
+Create a `.env.local` file at the project root and add your API keys:
+
+```env
+# For OpenAI
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Or for Anthropic
+ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+#### 4. Start the project
+```bash
+npm run dev
+```
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### 📁 Project Structure
+```
+├── app/                    # Next.js Pages
+│   ├── api/chat/          # API route for chat
+│   ├── page.tsx           # Main page
+│   └── layout.tsx         # App layout
+├── components/            # React components
+│   ├── assistant-ui/      # Assistant UI components
+│   └── ui/                # Reusable UI components
+├── mastra/                # Mastra configuration
+│   ├── agents/            # Custom AI agents
+│   └── index.ts           # Main configuration
+└── lib/                   # Utils and configs
+```
+
+### ✨ Features
+- 💬 **Modern chat interface** - clean and responsive
+- 🧠 **Modular AI agents** - built with Mastra
+- 🎨 **Customizable design** - Tailwind CSS component styling
+- 🔧 **Simple setup** - ready to use in minutes
+- 📱 **Responsive** - works on desktop and mobile
+- 🔌 **MCP integration** - built-in access to Mastra & Assistant UI docs
+
+### 🛠️ Customization
+- Update the default agent in `mastra/agents/chefAgent.ts`.
+- Add agents in `mastra/agents/` and import them in `mastra/index.ts`.
+- Modify UI components in `components/ui/` as needed.
+
+### 🔌 MCP (Model Context Protocol) Integration
+- Ships with `.mcp.json` for direct doc access from Claude Code or Cursor.
+- For Cursor, rename `.mcp.json` to `mcp.json` (`mv .mcp.json mcp.json`).
+
+### 📚 Documentation
+- [Assistant UI Documentation](https://docs.assistant-ui.com/)
+- [Mastra Documentation](https://docs.mastra.ai/)
+- [Next.js Documentation](https://nextjs.org/docs)
+
+### 🤝 Contributing
+Contributions are welcome! Feel free to:
+- Open issues for bugs
+- Suggest new features
+- Create pull requests
+
+### 📄 License
+MIT License. See [LICENSE](LICENSE).
+
+### 🆘 Support
+- Check your API key setup
+- See browser console logs
+- Open a GitHub issue if needed
+
+---
+
+## 🇫🇷 Français
+
 Un template de démarrage pour créer facilement votre propre assistant IA avec [assistant-ui](https://github.com/Yonom/assistant-ui) et [Mastra](https://mastra.ai/).
 
 ## 🚀 Démarrage rapide
