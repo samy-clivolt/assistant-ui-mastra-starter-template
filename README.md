@@ -1,5 +1,96 @@
 # 🤖 Assistant UI Mastra Starter Template
 
+## 🇬🇧 English
+
+A starter template to easily create your AI assistant using [assistant-ui](https://github.com/Yonom/assistant-ui) and [Mastra](https://mastra.ai/).
+
+### 🚀 Quick Start
+
+#### Prerequisites
+- Node.js 18+
+- An OpenAI or Anthropic API key
+
+#### 1. Use this template
+Click "Use this template" on GitHub to create your own repository.
+
+#### 2. Installation
+```bash
+# Clone your new repository
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+
+# Install dependencies
+npm install
+```
+
+#### 3. Configuration
+Create a `.env.local` file at the root and add your API keys:
+
+```env
+# For OpenAI
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Or for Anthropic
+ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+#### 4. Start
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to see your assistant!
+
+### 📁 Project structure
+```
+├── app/                  # Next.js pages
+│   ├── api/chat/         # Chat API route
+│   ├── page.tsx          # Main page
+│   └── layout.tsx        # App layout
+├── components/           # React components
+│   ├── assistant-ui/     # Assistant UI components
+│   └── ui/               # Reusable UI components
+├── mastra/               # Mastra config
+│   ├── agents/           # Custom AI agents
+│   └── index.ts          # Main config
+└── lib/                  # Utils/config
+```
+
+### ✨ Features
+- 💬 Modern chat interface (responsive, stylish)
+- 🧠 Modular AI agents with Mastra
+- 🎨 Customizable design (Tailwind CSS)
+- 🔧 Simple config, ready in minutes
+- 📱 Mobile ready
+- 🔌 MCP integration: access to Mastra & Assistant UI docs
+
+### 🛠️ Customization
+- To change the default agent, edit `mastra/agents/chefAgent.ts`
+- Add new agents in `mastra/agents/`, import in `mastra/index.ts`
+- UI components for editing: `components/ui/`
+
+### 🔌 Model Context Protocol (MCP)
+- `.mcp.json` enables instant docs in Claude Code and Cursor
+- For Cursor: rename `.mcp.json` → `mcp.json`
+
+### 📚 Documentation
+- [Assistant UI Docs](https://docs.assistant-ui.com/)
+- [Mastra Docs](https://docs.mastra.ai/)
+- [Next.js Docs](https://nextjs.org/docs)
+
+### 🤝 Contributing
+- Open issues for bugs/ideas
+- PRs welcome
+
+### 📄 License
+MIT. See [LICENSE](LICENSE).
+
+### 🆘 Support
+- Check API keys & browser console
+- Open a GitHub issue with details
+
+---
+
+
+
 Un template de démarrage pour créer facilement votre propre assistant IA avec [assistant-ui](https://github.com/Yonom/assistant-ui) et [Mastra](https://mastra.ai/).
 
 ## 🚀 Démarrage rapide
