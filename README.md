@@ -1,5 +1,132 @@
 # 🤖 Assistant UI Mastra Starter Template
 
+## English
+
+### Overview
+This is a starter template for quickly creating your own AI assistant using [assistant-ui](https://github.com/Yonom/assistant-ui) and [Mastra](https://mastra.ai/).
+
+### Quick Start
+1. **Requirements**
+   - Node.js 18+ installed on your machine.
+   - An OpenAI or Anthropic account to obtain an API key.
+
+2. **Using this Template**
+   - Click "Use this template" at the top of this page to create your own repository.
+
+3. **Installation**
+   ```bash
+   # Clone your new repository
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+   cd YOUR-REPO-NAME
+
+   # Install dependencies
+   npm install
+   ```
+
+4. **Configuration**
+   - Create a `.env.local` file at the root of the project and add your API keys:
+   ```env
+   # For OpenAI
+   OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+   # Or for Anthropic
+   ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   ```
+
+5. **Launch**
+   ```bash
+   npm run dev
+   ```
+   - Open [http://localhost:3000](http://localhost:3000) in your browser to see your assistant!
+
+### Project Structure
+```
+├── app/                    # Next.js Pages
+│   ├── api/chat/          # API route for chat
+│   ├── page.tsx           # Main page
+│   └── layout.tsx         # Application layout
+├── components/            # React components
+│   ├── assistant-ui/      # Assistant interface components
+│   └── ui/               # Reusable UI components
+├── mastra/               # Mastra configuration
+│   ├── agents/           # Custom AI agents
+│   └── index.ts          # Main configuration
+└── lib/                  # Utilities and configurations
+```
+
+### Features
+- 💬 **Modern Chat Interface** - Sleek and responsive UI
+- 🧠 **Smart AI Agents** - Modular agent system with Mastra
+- 🎨 **Customizable Design** - UI components with Tailwind CSS
+- 🔧 **Simple Configuration** - Up and running in minutes
+- 📱 **Responsive** - Works on both desktop and mobile
+- 🔌 **MCP Integration** - Direct access to Mastra and Assistant UI documentation
+
+### Customization
+- **Modify the Default Agent**
+  Edit `mastra/agents/chefAgent.ts` to customize your assistant's behavior:
+  ```typescript
+  export const chefAgent = {
+    name: "MyAssistant",
+    instructions: "You are a helpful assistant who...",
+    model: {
+      provider: "openai",
+      name: "gpt-4"
+    }
+  };
+  ```
+
+- **Add New Agents**
+  Create a new file in `mastra/agents/` and import it in `mastra/index.ts`.
+
+- **Customize the Interface**
+  UI components are located in `components/ui/` and can be modified as needed.
+
+### MCP Integration (Model Context Protocol)
+This template includes an `.mcp.json` file to access Mastra and Assistant UI documentation directly from Claude Code or Cursor.
+
+- **For Claude Code**
+  The `.mcp.json` file is already configured and active. You have access to MCP servers:
+  - **Mastra** - Complete Mastra documentation
+  - **Assistant UI** - Assistant UI documentation
+
+- **For Cursor**
+  Rename the `.mcp.json` file to `mcp.json` to activate integration in Cursor.
+  ```bash
+  # Activate MCP for Cursor
+  mv .mcp.json mcp.json
+  ```
+
+### Available MCP Features
+- 📖 Instant access to documentation
+- 🔍 Search within the docs
+- 💡 Contextual code examples
+- 🚀 Implementation guides
+
+### Documentation
+- [Assistant UI Documentation](https://docs.assistant-ui.com/)
+- [Mastra Documentation](https://docs.mastra.ai/)
+- [Next.js Documentation](https://nextjs.org/docs)
+
+### Contribution
+Contributions are welcome! Feel free to:
+- Open an issue to report a bug
+- Propose a new feature
+- Submit a pull request
+
+### License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+### Support
+If you encounter any issues:
+1. Make sure your API key is configured correctly
+2. Check the logs in the browser console
+3. Open an issue on GitHub with details of your problem
+
+---
+
+Created with ❤️ using [assistant-ui](https://github.com/Yonom/assistant-ui) and [Mastra](https://mastra.ai/)
+
 Un template de démarrage pour créer facilement votre propre assistant IA avec [assistant-ui](https://github.com/Yonom/assistant-ui) et [Mastra](https://mastra.ai/).
 
 ## 🚀 Démarrage rapide
